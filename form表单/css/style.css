@@ -1,0 +1,167 @@
+body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,input,select,textarea,form,fieldset,legend,table,tr,td{margin: 0; padding: 0;color: #000;}
+body{font:14px/1.5 Helvetica, Arial, sans-serif;}
+img{border:none;}
+ul,ol{list-style:none;}
+input,select,textarea{outline:none;border:none;background:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+a {blr:expression(this.onFocus=this.blur())} /*if IE*/
+a {outline:none;}/*if 火狐等现代浏览器浏览器*/ 
+
+body{
+	background: #b2d9f1;
+}
+#myForm{
+	width: 800px;
+	height: 520px;
+	padding: 15px;
+	margin: 100px auto;
+	background: rgba(455,455,455,.5);
+	text-align: right;
+}
+#myForm form{
+	position: relative;
+	width: 382px;
+	margin: 0 auto;
+}
+#myForm tr{
+	height: 44px;
+	display: block;
+	margin-top: 25px;
+}
+#myForm tr td{
+	font-size: 15px;
+	height: 44px;
+	line-height: 44px;
+}
+#myForm tr td.title{
+	display: block;
+	float: left;
+	margin-right: 8px;
+	width: 68px;
+	height: 44px;
+	line-height: 44px;
+}
+#myForm .username span,#myForm .psd span,#myForm .psd2 span{
+	font-size: 18px;
+	display: inline-block;
+	height: 44px;
+	line-height: 44px;
+	color: #f00;
+}
+#myForm tr.sex label, #myForm tr.hobby label{
+	display: inline-block;
+	margin-right: 15px;
+}
+#myForm input[type="text"],#myForm input[type="password"] {
+    width: 270px;
+    height: 42px;
+    padding: 0 15px;
+    background: #fff; /* browsers that don't support rgba */
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#myForm input[type="text"]:-moz-placeholder,#myForm input[type="password"]:-moz-placeholder { color: #fff; }
+#myForm input[type="text"]:-ms-input-placeholder,#myForm input[type="password"]:-ms-input-placeholder { color: #fff; }
+#myForm input[type="text"]::-webkit-input-placeholder,#myForm input[type="password"]::-webkit-input-placeholder { color: #fff; }
+
+#myForm input[type="text"]:focus,#myForm input[type="password"]:focus {
+    outline: none;
+    -moz-box-shadow:
+    0 2px 3px 0 rgba(0,0,0,.1) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+    0 2px 3px 0 rgba(0,0,0,.1) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+    box-shadow:
+    0 2px 3px 0 rgba(0,0,0,.1) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+}
+#myForm .submit input {
+	float: left;
+    cursor: pointer;
+    width: 100px;
+    height: 44px;
+    margin-right: 35px;
+    background: #24abe2;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #24abe6;
+    -moz-box-shadow:
+    0 15px 30px 0 rgba(255,255,255,.25) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+    0 15px 30px 0 rgba(255,255,255,.25) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+    box-shadow:
+    0 15px 30px 0 rgba(255,255,255,.25) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+
+#myForm .submit input:hover {
+    -moz-box-shadow:
+    0 15px 30px 0 rgba(255,255,255,.15) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+    0 15px 30px 0 rgba(255,255,255,.15) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+    box-shadow:
+    0 15px 30px 0 rgba(255,255,255,.15) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+}
+
+#myForm .submit input:active {
+    -moz-box-shadow:
+    0 15px 30px 0 rgba(255,255,255,.15) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+    0 15px 30px 0 rgba(255,255,255,.15) inset,
+    0 2px 7px 0 rgba(0,0,0,.2);
+    box-shadow:        
+    0 5px 8px 0 rgba(0,0,0,.1) inset,
+    0 1px 4px 0 rgba(0,0,0,.1);
+    border: 0;
+}
+#myForm form select{
+    width: 130px;
+    height: 42px;
+    background: #fff;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+#myForm form .usernameError,#myForm form .psdError,#myForm form .psd2Error{
+    position: absolute;
+    left: 387px;
+    width: 165px;
+    color: #f00;
+    height: 44px;
+    line-height: 44px;
+    text-align: left;
+}
+#myForm form .usernameError{	
+	top: 28px;
+}
+#myForm form .psdError{
+    top: 98px;
+}
+#myForm form .psd2Error{
+    top: 166px;
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>form表单验证</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div id="myForm">
+    <form method="post" action="">
+      <table>
+        <tr class="username">
+          <td class="title"><span>*</span><label for="username">用户名</label></td>
+          <td><input type="text" id="username" name="username"></td>
+        </tr>
+        <tr class="psd">
+          <td class="title"><span>*</span><label for="psd">密码</label></td>
+          <td><input type="password" id="psd" name="psd"></td>
+        </tr>
+        <tr class="psd2">
+          <td class="title"><span>*</span><label for="psd2">确认密码</label></td>
+          <td><input type="password" id="psd2" name="psd2"></td>
+        </tr>
+        <tr class="sex">
+          <td class="title">性别</td>
+          <td><input type="radio" id="male" value="男" name="sex"></td>
+          <td><label for="male">男</label></td>
+          <td><input type="radio" id="female" value="女" name="sex"></td>
+          <td><label for="female">女</label></td>                 
+        </tr>
+        <tr class="hobby">
+          <td class="title">爱好</td>
+          <td><input type="checkbox" id="hobby-1" value="hobby-1" name="hobby"></td>
+          <td><label for="hobby-1">篮球</label></td>
+          <td><input type="checkbox" id="hobby-2" value="hobby-2" name="hobby"></td>
+          <td><label for="hobby-2">看书</label></td>
+          <td><input type="checkbox" id="hobby-3" value="hobby-3" name="hobby"></td>
+          <td><label for="hobby-3">唱歌</label></td>
+          <td><input type="checkbox" id="hobby-4" value="hobby-4" name="hobby"></td>
+          <td><label for="hobby-4">聊微信</label></td>
+        </tr>
+        <tr class="city">
+          <td class="title">城市</td>
+          <td>
+            <select id="city">
+              <option value="0" selected="selected" disabled="">请选择城市</option>
+              <option value="city-1">重庆</option>
+              <option value="city-2">杭州</option>
+              <option value="city-3">成都</option>
+              <option value="city-4">北京</option>
+              <option value="city-5">广东</option>
+              <option value="city-6">天津</option>
+            </select>
+          </td>
+          <td>
+            <select id="area">
+              <option value="0" selected="selected" disabled="">请选择地区</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="submit">
+          <td><input type="submit" value="submit"></td>
+          <td><input type="button" value="button" onclick="checkForm();"></td>
+          <td><input type="reset" value="reset"></td>
+        </tr>
+      </table>
+      <span class="usernameError"></span>
+      <span class="psdError"></span>
+      <span class="psd2Error"></span>
+    </form>
+  </div>  
+  <script src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
